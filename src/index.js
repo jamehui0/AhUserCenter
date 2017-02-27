@@ -14,4 +14,6 @@ module.exports = function (app) {
     app.use('/attribute', require('./attribute'));
     /*安全级别*/
     app.use('/security', require('./security'));
+    /*授权管理*/
+    app.use('/authorization', require('./authorization'));
 };
