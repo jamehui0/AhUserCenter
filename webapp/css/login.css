@@ -1,0 +1,24 @@
+﻿body{background:#acacac;}
+/*content*/
+.content{padding:150px 0 100px 0;}
+.login{margin:0 auto;background:#ffffff;width:414px;text-align:center;border-radius:5px;}
+.login .login-bg{background:#80858c;padding:13px 0;border-top-left-radius:5px;border-top-right-radius:5px;}
+.login form{padding:25px 0 50px 0;display:inline-block;}
+.login form input:focus{outline:none;}
+.content .login form input{width:300px;height:40px;line-height:36px;padding:0 30px 0 10px;font-family:'黑体';font-size:16px;color:#999999;border:2px solid #d5d5d5;border-radius:5px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;}
+.content .login form input:focus{outline:none;}
+.content .login form .login-info{display:inline-block;vertical-align:middle;}
+.content .login form .user input{background:#ffffff url(../images/icon-login.png) no-repeat 260px -10px}
+.content .login form .pass,.content .login form .form-btn{margin-top:30px;}
+.content .login form .pass input{background:#ffffff url(../images/icon-login.png) no-repeat 260px -76px;}
+.content .login form .form-btn{}
+.content .login form .form-btn .sub{background:#1fb5ad;padding:0;color:#ffffff;cursor:pointer;border:0;}
+.content .login form .forget-pass{text-align:right;margin-top:30px;font-family:'微软雅黑';font-size:12px;color:#8f8f8f;}
+.content .login form .forget-pass a{display:inline-block;color:#8f8f8f;}
+.content .login form .forget-pass a:hover{text-decoration:underline;}
+form em.prompt{display:block;margin-left:0;padding:0 0 5px 10px;font-size:14px;text-align:left;}
+/*footer*/
+.footer{position:fixed;width:100%;left:0;bottom:0;background:#585858;padding:20px 0;}
+.footer .filings{text-align:center;font-family:'微软雅黑';font-size:12px;color:#dcdcdc;}
+.footer .filings a{color:#dcdcdc;display:inline-block;}
+.footer .filings a:hover{text-decoration:underline;}

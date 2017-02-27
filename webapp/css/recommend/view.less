@@ -1,0 +1,172 @@
+/*可视化页面部分*/
+#view {
+  width: 932px;
+  height: 524px;
+  background: url("../../images/base/view-bg.png") no-repeat;
+  overflow: auto;
+  color: #F0941B;
+  font-size: 17px;
+  position: relative;
+}
+
+.view-title, .view-content, .content-box, .box, .txt {
+  position: absolute;
+}
+
+.view-title {
+  top: 36px;
+  left: 200px;
+}
+
+.tab {
+  float: left;
+  margin-right: 40px;
+  line-height: 24px;
+  &:hover {
+    color: #da251c;
+    cursor: pointer;
+  }
+}
+
+.tab-focus {
+  color: #da251c;
+  border-bottom: 3px solid #da251c;
+}
+
+.tab-select {
+  color: #da251c;
+}
+
+.view-content {
+  display: none;
+  top: 108px;
+  width: 932px;
+  height: 344px;
+  padding-top: 4px;
+  overflow-x: auto;
+  scrollbar-arrow-color: #78c4f0;
+  /*设置滚动条箭头的颜色*/
+  scrollbar-face-color: #78c4f0;
+  /*设置滚动框和滚动条箭头的颜色*/
+  scrollbar-darkshadow-color: #78c4f0;
+  /*设置滚动条槽的颜色*/
+  scrollbar-highlight-color: #78c4f0;
+  /*设置滚动框的和滚动条箭头左上边缘的颜色*/
+  scrollbar-3dlight-color: #f5c341;
+  /*设置滚动框的和滚动条箭头左上边缘的颜色*/
+  scrollbar-shadow-color: #78c4f0;
+  /*设置滚动框的和滚动条箭头右下边缘的颜色*/
+  scrollbar-track-color: #042730;
+  /*设置滚动条轨迹组成部分的颜色*/
+}
+
+.view-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.view-content::-webkit-scrollbar-track {
+  height: 80px;
+  background-color: transparent;
+}
+
+.view-content::-webkit-scrollbar-button {
+  /*display: none;*/
+}
+
+.view-content::-webkit-scrollbar-thumb {
+  background-color: #ababab;
+  white-space: nowrap;
+}
+
+.content-box {
+  left: 58px;
+}
+
+.box {
+  padding: 1px;
+}
+
+.txt {
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  line-height: 30px;
+  text-indent: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.box-focus {
+  -moz-box-shadow: 0px 0px 5px 3px #f08902;
+  -webkit-box-shadow: 0px 0px 5px 3px #f08902;
+  box-shadow: 0px 0px 5px 3px #f08902;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+}
+
+/*搜索按钮*/
+.box-search {
+  width: 90px;
+  height: 30px;
+  padding: 1px;
+  position: absolute;
+  top: 460px;
+  left: 58px;
+  border-radius: 4px;
+  &:hover {
+    -moz-box-shadow: 0px 0px 5px 3px #f08902;
+    -webkit-box-shadow: 0px 0px 5px 3px #f08902;
+    box-shadow: 0px 0px 5px 3px #f08902;
+  }
+}
+/*遮罩层*/
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.75);
+  color: #fff;
+  display: table;
+  display: none;
+}
+.box:hover .cover{
+  display: table;
+}
+.view-reset,.view-edit{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.view-reset{
+  position: absolute;
+  top:10px;
+  left: 10px;
+  font-size: 14px;
+}
+.ic-reset{
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.view-edit{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/*操作按钮*/
+.view-operate{
+  width: 932px;
+  margin-top: 40px;
+  text-align: right;
+  a{
+    margin-left: 36px;
+  }
+}

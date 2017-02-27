@@ -1,0 +1,31 @@
+.preview {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 700px;
+    height: 500px;
+    padding: 60px 40px 0 0;
+    overflow-x: auto;
+}
+.item-check{
+    width: 60px;
+}
+.item-id{
+    width: 100px;
+}
+.item-name{
+    width: 440px;
+}
+.item-type{
+    width: 160px;
+}
+.item-operate{
+    width: 60px;
+}
+.item-img{
+    width: 100px;
+}
+.relate-column .relate-name{
+    width: 600px;
+}
+/*可视化页面部分*/
