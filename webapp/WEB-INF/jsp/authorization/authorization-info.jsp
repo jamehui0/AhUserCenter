@@ -19,8 +19,8 @@
             <div class="content-title">
                 <!--面包屑-->
                 <ol class="breadcrumb">
-                    <li>属性管理</li>
-                    <li class="active">编辑</li>
+                    <li>授权管理</li>
+                    <li class="active">详情</li>
                 </ol>
             </div><!--content-title-->
             <form action="" method="post">

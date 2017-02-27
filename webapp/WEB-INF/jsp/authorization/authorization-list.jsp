@@ -19,9 +19,9 @@
             <div class="content-title">
                 <!--面包屑-->
                 <ol class="breadcrumb">
-                    <li class="active">属性管理</li>
+                    <li class="active">授权管理</li>
                 </ol>
-                <a class="btn btn-add pull-right" href="/columnEdit"><i class="ic ic-plus"></i><span>新增属性</span></a>
+                <a class="btn btn-add pull-right" href="/columnEdit"><i class="ic ic-plus"></i><span>新增授权</span></a>
             </div>
             <!--搜索框-->
             <div class="search mb20">
