@@ -1,13 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-/*推荐页*/
 router.get('/attrTypeList', function (req, res, next) {
-    res.render('attrType/attrType-list', {title: 'attrType'});
+    res.render('attrType/attrType-list');
 });
 
 router.get('/attrTypeEdit', function (req, res, next) {
-    res.render('attrType/attrType-edit', {title: 'attrType'});
+    res.render('attrType/attrType-edit');
 });
 
 module.exports = router;
