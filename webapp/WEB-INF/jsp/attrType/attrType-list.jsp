@@ -6,7 +6,6 @@
     <title>安徽电信用户中心管理平台</title>
     <link rel="stylesheet" href="../css/ext/bootstrap.min.css">
     <link rel="stylesheet" href="../css/common/base.css">
-    <link rel="stylesheet" href="../css/common/contentlist.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
 </head>
