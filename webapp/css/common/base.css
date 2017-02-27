@@ -226,10 +226,12 @@ input[type=submit] {
 }
 .l80 {
     width: 80px;
-    padding-left: 16px;
 }
 .l96 {
     width: 96px;
+    padding-left: 16px;
+}
+.pl16{
     padding-left: 16px;
 }
 input,
@@ -264,7 +266,7 @@ label {
     display: inline-block;
 }
 .form-list {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .form-list i {
     margin-right: 6px;

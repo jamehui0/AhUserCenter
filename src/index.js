@@ -2,5 +2,5 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         res.render('index',{title:'index'});
     });
-    app.use('/recommend', require('./recommend'));
+    app.use('/attrType', require('./attrType'));
 };
