@@ -19,8 +19,8 @@
             <div class="content-title">
                 <!--面包屑-->
                 <ol class="breadcrumb">
-                    <li>属性管理</li>
-                    <li class="active">详情</li>
+                    <li>授权管理</li>
+                    <li class="active">新增</li>
                 </ol>
             </div><!--content-title-->
             <form action="" method="post">
@@ -47,5 +47,22 @@
         </div><!--wrapper-->
     </div><!--main-content-->
 </div>
+<script>
+    $(function () {
+        /*提交时验证*/
+        $(document).submit(function () {
+            var mark = 0;
+            if (check_remark())mark++;
+            if (check_relate())mark++;
+            if (mark == 3) {
+                $('.btn-submit').val('提交中...').attr('disabled',true);
+                setTimeout("$('.btn-submit').val('提交').attr('disabled',false)",300);
+            }else{
+
+            }
+            return false;
+        })
+    })
+</script>
 </body>
 </html>

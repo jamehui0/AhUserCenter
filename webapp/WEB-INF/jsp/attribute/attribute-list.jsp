@@ -21,7 +21,7 @@
                 <ol class="breadcrumb">
                     <li class="active">属性管理</li>
                 </ol>
-                <a class="btn btn-add pull-right" href="/columnEdit"><i class="ic ic-plus"></i><span>新增属性</span></a>
+                <a class="btn btn-add pull-right" href="../attribute/attributeEdit"><i class="ic ic-plus"></i><span>新增属性</span></a>
             </div>
             <!--搜索框-->
             <div class="search mb20">
@@ -43,8 +43,8 @@
                     <li class="item-name">名称名称名称名称名称名称名称名称名称名称名称名称名称</li>
                     <li class="item-img"><img src="../images/base/img-item.jpg" alt=""></li>
                     <li class="item-operate">
-                        <a href="/attrType/attrTypeEdit"><i class="ic ic-edit"></i></a>
-                        <a href=""><i class="ic ic-info"></i></a>
+                        <a href="../attribute/attributeEdit"><i class="ic ic-edit"></i></a>
+                        <a href="../attribute/attributeInfo"><i class="ic ic-info"></i></a>
                         <a href=""><i class="ic ic-delete"></i></a>
                     </li>
                     <li class="line"></li>
