@@ -9,4 +9,8 @@ router.get('/attrTypeEdit', function (req, res, next) {
     res.render('attrType/attrType-edit');
 });
 
+router.get('/attrTypeInfo', function (req, res, next) {
+    res.render('attrType/attrType-info');
+});
+
 module.exports = router;

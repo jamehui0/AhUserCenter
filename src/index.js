@@ -8,5 +8,8 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         res.render('index',{title:'index'});
     });
+    /*属性类型*/
     app.use('/attrType', require('./attrType'));
+    /*属性*/
+    app.use('/attribute', require('./attribute'));
 };
