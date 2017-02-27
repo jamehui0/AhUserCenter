@@ -21,7 +21,7 @@
                 <ol class="breadcrumb">
                     <li class="active">属性管理</li>
                 </ol>
-                <a class="btn btn-add pull-right" href="/columnEdit"><i class="ic ic-plus"></i><span>新增类型</span></a>
+                <a class="btn btn-add pull-right" href="/columnEdit"><i class="ic ic-plus"></i><span>新增属性</span></a>
             </div>
             <!--搜索框-->
             <div class="search mb20">

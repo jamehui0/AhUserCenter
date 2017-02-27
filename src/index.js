@@ -12,4 +12,6 @@ module.exports = function (app) {
     app.use('/attrType', require('./attrType'));
     /*属性*/
     app.use('/attribute', require('./attribute'));
+    /*安全级别*/
+    app.use('/security', require('./security'));
 };
