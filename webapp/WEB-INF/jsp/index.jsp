@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>文化馆</title>
+    <title>安徽电信用户中心管理平台</title>
     <link rel="stylesheet" href="../css/ext/bootstrap.min.css">
     <link rel="stylesheet" href="../css/common/base.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
