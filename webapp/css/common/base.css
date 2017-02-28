@@ -246,8 +246,8 @@ select {
     width: 400px;
     height: 34px;
 }
-.i786 {
-    width: 786px;
+.i894 {
+    width: 894px;
     height: 36px;
 }
 .t594 {
@@ -288,7 +288,7 @@ label {
 }
 /*搜索框开始*/
 .search {
-    width: 932px;
+    width: 1032px;
 }
 .search input,
 .search a {
@@ -484,12 +484,12 @@ label {
     margin-bottom: 20px;
 }
 .content-title {
-    width: 932px;
+    width: 1032px;
     padding: 8px 0;
 }
 /*列表开始*/
 .list {
-    width: 932px;
+    width: 1032px;
 }
 .line {
     width: 100%;
@@ -498,8 +498,7 @@ label {
 }
 .list-head,
 .list-item {
-    width: 932px;
-    padding: 0 6px;
+    width: 1032px;
     text-align: center;
 }
 .list-head {

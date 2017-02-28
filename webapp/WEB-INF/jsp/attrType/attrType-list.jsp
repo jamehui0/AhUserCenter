@@ -9,6 +9,17 @@
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
     <script src="../js/base.js"></script>
+    <style>
+        .item-name{
+            width: 500px;
+        }
+        .item-perfix{
+            width: 300px;
+        }
+        .item-operate{
+            width: 232px;
+        }
+    </style>
 </head>
 <body>
 <% include ../common/header.jsp %>
@@ -27,22 +38,20 @@
             <!--搜索框-->
             <div class="search mb20">
                 <form action="" method="get" id="form-search">
-                    <input id="keyword" class="i786" type="text" name="keyword" value="" placeholder="请输入内容ID或名称进行搜索">
+                    <input id="keyword" class="i894" type="text" name="keyword" value="" placeholder="请输入内容ID或名称进行搜索">
                     <a class="btn btn-search pull-right" href="javascript:;"><i class="ic ic-search"></i><span>搜索</span></a>
                 </form>
             </div>
             <!--列表-->
             <div class="list mb20 shadow clearfix">
                 <ul class="list-head">
-                    <li class="item-position">ID</li>
                     <li class="item-name">名称</li>
-                    <li class="item-img">图片</li>
+                    <li class="item-perfix">前缀</li>
                     <li class="item-operate">操作</li>
                 </ul>
                 <ul class="list-item">
-                    <li class="item-position">E12345678912</li>
-                    <li class="item-name">名称名称名称名称名称名称名称名称名称名称名称名称名称</li>
-                    <li class="item-img"><img src="../images/base/img-item.jpg" alt=""></li>
+                    <li class="item-name">名称名称名称名称名</li>
+                    <li class="item-perfix">前缀</li>
                     <li class="item-operate">
                         <a href="../attrType/attrTypeEdit"><i class="ic ic-edit"></i></a>
                         <a href="../attrType/attrTypeInfo"><i class="ic ic-info"></i></a>
