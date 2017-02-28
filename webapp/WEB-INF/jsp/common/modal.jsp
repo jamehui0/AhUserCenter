@@ -1,5 +1,5 @@
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+<!-- 重置弹窗 -->
+<div class="modal fade" id="modal-reset" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="confirm-head">
@@ -13,6 +13,25 @@
             <div class="confirm-foot">
                 <a class="btn btn-confirm" href="javascript:">确定</a>
                 <a class="btn btn-lcancel" data-dismiss="modal" href="javascript:">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--选择属性类型弹窗-->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="ModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

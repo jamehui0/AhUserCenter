@@ -55,7 +55,7 @@
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>属性类型</label>
-                    <input type="button" class="btn" value="选择">
+                    <a class="btn btn-choice" url="../recommend?reset" data-toggle="modal" data-target="#myModal"><span>选择</span></a>
                     <em></em>
                 </div>
                 <div class="form-list textarea">
@@ -71,6 +71,7 @@
         </div><!--wrapper-->
     </div><!--main-content-->
 </div>
+<% include ../common/modal.jsp %>
 <script>
     $(function () {
         $('#name').blur(function(){

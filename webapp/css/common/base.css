@@ -638,12 +638,12 @@ em i {
 }
 /*内容区结束*/
 /*遮罩层开始*/
-.modal-dialog {
+#modal-reset .modal-dialog {
     width: 430px;
     margin: 300px auto;
     color: #fff;
 }
-.modal-content {
+#modal-reset .modal-content {
     border-radius: 4px;
 }
 .confirm-head {
