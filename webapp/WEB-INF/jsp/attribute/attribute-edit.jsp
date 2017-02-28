@@ -55,7 +55,7 @@
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>属性类型</label>
-                    <a class="btn btn-choice" url="../recommend?reset" data-toggle="modal" data-target="#myModal"><span>选择</span></a>
+                    <a class="btn btn-choice" url="../recommend?reset" data-toggle="modal" data-target="#modal-choice"><span>选择</span></a>
                     <em></em>
                 </div>
                 <div class="form-list textarea">
