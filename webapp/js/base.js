@@ -38,6 +38,8 @@ $(function () {
     /**搜索*/
     $('.btn-search').click(function () {
         $('#form-search').trigger('submit');
+        $(this).find('span').text('搜索中...').attr('disabled',true);
+        setTimeout( $(this).find('span').text('搜索').attr('disabled',false),300)
     });
     /*列表搜索验证*/
     $('#form-search').submit(function(){
