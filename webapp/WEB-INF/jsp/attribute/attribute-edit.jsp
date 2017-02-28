@@ -26,18 +26,42 @@
             <form action="" method="post">
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>名称</label>
-                    <input id="name" class="i280" type="text" name="" maxlength="30">
-                    <em>不超过30个字符，可由中英文数字及中英文符号组成</em>
+                    <input id="name" class="i280" type="text" name="" maxlength="20">
+                    <em></em>
                 </div>
                 <div class="form-list">
-                    <label class="l80"><i class="ic ic-dotred"></i>前缀</label>
-                    <input id="prefix" class="i280" type="text" name="" maxlength="30">
-                    <em>不超过30个字符，可由中英文数字及中英文符号组成</em>
+                    <label class="l80"><i class="ic ic-dotred"></i>字段名称</label>
+                    <input id="fieldname" class="i280" type="text" name="" maxlength="12">
+                    <em></em>
+                </div>
+                <div class="form-list">
+                    <label class="l80"><i class="ic ic-dotred"></i>字段类型</label>
+                    <select name="" class="i280" id="fieldtype">
+                        <option value="1">String</option>
+                        <option value="2">时间类型</option>
+                    </select>
+                    <em></em>
+                </div>
+                <div class="form-list">
+                    <label class="l80"><i class="ic ic-dotred"></i>安全级别</label>
+                    <select name="" class="i280" id="securitylevel">
+                        <option value="1">一级</option>
+                        <option value="2">二级</option>
+                        <option value="3">三级</option>
+                        <option value="4">四级</option>
+                        <option value="5">五级</option>
+                    </select>
+                    <em></em>
+                </div>
+                <div class="form-list">
+                    <label class="l80"><i class="ic ic-dotred"></i>属性类型</label>
+                    <input type="button" class="btn" value="选择">
+                    <em></em>
                 </div>
                 <div class="form-list textarea">
-                    <label class="l80 pl16">备注</label>
-                    <textarea id="remark" class="t594" name="" maxlength="200"></textarea>
-                    <em>不超过200个字符</em>
+                    <label class="l80 pl16">说明</label>
+                    <textarea id="desc" class="t594" name="" maxlength="500"></textarea>
+                    <em></em>
                 </div>
                 <div style="margin-left: 88px">
                     <input class="btn btn-submit" type="submit" value="提交">
@@ -49,19 +73,12 @@
 </div>
 <script>
     $(function () {
-        /*提交时验证*/
-        $(document).submit(function () {
-            var mark = 0;
-            if (check_remark())mark++;
-            if (check_relate())mark++;
-            if (mark == 3) {
-                $('.btn-submit').val('提交中...').attr('disabled',true);
-                setTimeout("$('.btn-submit').val('提交').attr('disabled',false)",300);
-            }else{
-
-            }
-            return false;
-        })
+        $('#name').blur(function(){
+            check_name();
+        });
+        $('#desc').blur(function(){
+            check_desc();
+        });
     })
 </script>
 </body>

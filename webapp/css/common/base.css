@@ -163,7 +163,7 @@ ul {
 }
 /*雪碧图结束*/
 /*按钮开始*/
-input[type=submit] {
+input[type=submit],input[type=button] {
     color: #fff;
 }
 .btn.focus,
