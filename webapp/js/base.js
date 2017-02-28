@@ -35,6 +35,22 @@ $(function () {
             console.log(url);
         }
     });
+    /**搜索*/
+    $('.btn-search').click(function () {
+        $('#form-search').trigger('submit');
+    });
+    /*列表搜索验证*/
+    $('#form-search').submit(function(){
+        var tar=$('#keyword');
+        var val=tar.val();
+        var reg=/^[\u4e00-\u9fa5A-Za-z0-9_]{0,30}$/;
+        if(reg.test(val)){
+            return true;
+        }else{
+            alert('搜索框中不允许输入特殊字符');
+            return false;
+        }
+    })
 });
 /**名称验证
  * 输入中文字符、字母、数字、下划线；长度限制2-20位
@@ -64,3 +80,4 @@ function check_desc(){
         em.html('<i class="ic ic-right">').show();
     }
 }
+

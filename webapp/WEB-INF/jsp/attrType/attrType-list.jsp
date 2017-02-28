@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/common/base.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
+    <script src="../js/base.js"></script>
 </head>
 <body>
 <% include ../common/header.jsp %>
@@ -26,8 +27,8 @@
             <!--搜索框-->
             <div class="search mb20">
                 <form action="" method="get" id="form-search">
-                    <input class="i786" type="text" name="" value="" placeholder="请输入内容ID或名称进行搜索">
-                    <a class="btn btn-search pull-right" href=""><i class="ic ic-search"></i><span>搜索</span></a>
+                    <input id="keyword" class="i786" type="text" name="keyword" value="" placeholder="请输入内容ID或名称进行搜索">
+                    <a class="btn btn-search pull-right" href="javascript:;"><i class="ic ic-search"></i><span>搜索</span></a>
                 </form>
             </div>
             <!--列表-->
