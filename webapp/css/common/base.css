@@ -246,6 +246,10 @@ select {
     width: 400px;
     height: 34px;
 }
+.i786 {
+    width: 786px;
+    height: 36px;
+}
 .i894 {
     width: 894px;
     height: 36px;
@@ -637,37 +641,3 @@ em i {
     vertical-align: middle;
 }
 /*内容区结束*/
-/*遮罩层开始*/
-#modal-reset .modal-dialog {
-    width: 430px;
-    margin: 300px auto;
-    color: #fff;
-}
-#modal-reset .modal-content {
-    border-radius: 4px;
-}
-.confirm-head {
-    height: 40px;
-    background-color: #f3515e;
-    padding: 8px 20px;
-}
-.confirm-body {
-    height: 150px;
-    vertical-align: middle;
-}
-.confirm-body p {
-    width: 300px;
-    margin: 0 auto;
-    padding-top: 40px;
-    text-align: center;
-    color: #f3515e;
-    line-height: 40px;
-}
-.confirm-foot {
-    height: 78px;
-    text-align: center;
-}
-.confirm-foot a {
-    margin: 0 8px;
-}
-/*遮罩层结束*/

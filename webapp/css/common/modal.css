@@ -1,0 +1,68 @@
+.modal-lg{
+    width: 1014px;
+}
+.modal-header{
+    height: 42px;
+    padding: 0;
+    background-color: #45b7c2;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+}
+.modal-body{
+    padding: 40px;
+    background-color: #eff3f6;
+}
+.choice-search{
+    width: 932px;
+}
+.list-choice{
+    width: 932px;
+    border: 1px solid #acacac;
+    border-bottom: none;
+}
+.choice-head,
+.choice-item {
+    width: 100%;
+    text-align: center;
+}
+.choice-item:hover{
+    background-color: #d0d0d0;
+}
+.choice-head {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #acacac;
+}
+.choice-head li {
+    float: left;
+    height: 100%;
+}
+.choice-item {
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #acacac;
+}
+.choice-item li {
+    float: left;
+    height: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.choice-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.choice-operate i{
+    margin: 0 4px;
+    vertical-align: middle;
+}
+
+/*选择属性类型弹窗*/
+#attrType-choice .choice-check{width: 40px}
+#attrType-choice .choice-name{width: 410px}
+#attrType-choice .choice-prefix{width: 300px}
+#attrType-choice .choice-operate{width: 180px}

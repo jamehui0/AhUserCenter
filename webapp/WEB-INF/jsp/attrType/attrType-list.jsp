@@ -61,7 +61,7 @@
                 </ul>
             </div>
             <!--分页-->
-            <div id="laypage" style="text-align:center;width: 932px"></div>
+            <div id="laypage" style="text-align:center;width: 1032px"></div>
         </div><!--wrapper-->
     </div><!--main-content-->
 </div>

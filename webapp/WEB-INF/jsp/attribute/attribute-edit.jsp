@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/common/base.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
+    <script src="../js/ext/laypage/laypage.js"></script>
     <script src="../js/base.js"></script>
 </head>
 <body>
