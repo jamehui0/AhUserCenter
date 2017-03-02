@@ -95,7 +95,6 @@
                     pageNo: '1'
                 };
                 if(typeof ev != "undefined"){
-                    console.log(ev.target);
                     opt.keyWord=$('#keyWord').val();
                 }
                 $.ajax({
