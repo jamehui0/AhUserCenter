@@ -15,8 +15,9 @@ router.get('/attributeInfo', function (req, res, next) {
 
 router.get('/getAttrType', function (req, res, next) {
     var currentPageNo=req.query.pageNo;
+    var keyWord=req.query.keyWord;
     var name="位置信息"+currentPageNo;
-    var prefix="POSI"+currentPageNo;
+    var prefix="POSI/"+keyWord;
     res.send({
         "msg": "请求成功",
         "resultCode": 20010000,
@@ -28,6 +29,7 @@ router.get('/getAttrType', function (req, res, next) {
                         {"id": 1,"name": name, "prefix": prefix},
                         {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
                     ],
+                    "keyWord": keyWord,
                     "currentPageNo": currentPageNo,
                     "pageSize": 2,
                     "totalPages": 14

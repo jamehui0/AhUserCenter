@@ -9,8 +9,8 @@
             </div>
             <div class="modal-body">
                 <div class="choice-search mb20">
-                    <input id="keyword" class="i786" type="text" name="keyword" value="" placeholder="请输入名称或前缀进行搜索">
-                    <a class="btn btn-search pull-right" href="javascript:;"><i class="ic ic-search"></i><span>搜索</span></a>
+                    <input id="keyWord" class="i786" type="text" name="keyWord" value="" placeholder="请输入名称或前缀进行搜索">
+                    <a class="btn pull-right" href="javascript:;" @click="showData"><i class="ic ic-search"></i><span>搜索</span></a>
                 </div>
                 <div class="list-choice mb20 clearfix">
                     <ul class="choice-head">
@@ -42,6 +42,7 @@
     /**属性类型弹出前获取数据*/
     $('#attrType-choice').on('show.bs.modal', function (event) {
         vm.showData();
+        $('#keyWord').val('');
     });
     var vm = new Vue({
         el: '#attrType-choice',
@@ -75,6 +76,7 @@
                                     data: opt,
                                     dataType: "json",
                                     success: function (res) {
+                                        $('#keyWord').val(res.content.items[0].keyWord);
                                         _self.dataItem = res.content.items[0].data;
                                     },
                                     error: function () {
@@ -92,6 +94,10 @@
                     pageSize: '2',//每页条数
                     pageNo: '1'
                 };
+                if(typeof ev != "undefined"){
+                    console.log(ev.target);
+                    opt.keyWord=$('#keyWord').val();
+                }
                 $.ajax({
                     url: _self.url,
                     type: 'get',
