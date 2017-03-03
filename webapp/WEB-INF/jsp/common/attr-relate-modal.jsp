@@ -129,7 +129,10 @@
                         '<li class="related-name">' + name + '</li>' +
                         '<li class="related-prefix">' + prefix + '</li>' +
                         '<li class="related-info"><a href="' + info + '" target="_blank"><i class="ic ic-info"></i></a></li>';
-                $('.related-attrType').html(str_html).show();
+                var tar=$('.related-attrType');
+                tar.html(str_html).show();
+                var em=tar.parent().find('em');
+                em.html('<i class="ic ic-right">').show();
                 $('#attrType-choice').modal('hide')
             }
         });

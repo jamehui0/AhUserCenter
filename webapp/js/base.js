@@ -81,5 +81,5 @@ function check_desc(){
     }else{
         em.html('<i class="ic ic-right">').show();
     }
+    return val.length<=500;
 }
-

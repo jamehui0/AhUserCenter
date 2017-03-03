@@ -109,7 +109,19 @@
         });
         $('#desc').blur(function(){
             check_desc();
+            check_relate();
         });
+        function check_relate(){
+            var tar=$('.related-attrType');
+            var val=tar.find('.related-id').val();
+            var em=tar.parent().find('em');
+            if(val!=''){
+                em.html('<i class="ic ic-right">').show();
+            }else{
+                em.html('<i class="ic ic-warn"></i>请先选择属性类型').show();
+            }
+            return val!=''
+        }
     })
 </script>
 </body>
