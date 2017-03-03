@@ -15,14 +15,17 @@
                     <ul class="choice-head">
                         <li class="choice-check"></li>
                         <li class="choice-name">名称</li>
-                        <li class="choice-prefix">前缀</li>
+                        <li class="choice-fieldname">字段名</li>
+                        <li class="choice-fieldtype">字段类型</li>
+                        <li class="choice-securitylevel">安全级别</li>
                         <li class="choice-operate">操作</li>
                     </ul>
                     <ul class="choice-item" v-for="item in dataItem">
-                        <li class="choice-check"><input type="radio" :value="item.id" :data-name="item.name" :data-prefix="item.prefix"
-                                                        :data-info="baseUrl+item.id"></li>
+                        <li class="choice-check"><input type="checkbox" :value="item.id" :data-name="item.name" :data-prefix="item.prefix" :data-info="baseUrl+item.id"></li>
                         <li class="choice-name">{{item.name}}</li>
-                        <li class="choice-prefix">{{item.prefix}}</li>
+                        <li class="choice-fieldname">{{item.fieldname}}</li>
+                        <li class="choice-fieldtype">{{item.fieldtype}}</li>
+                        <li class="choice-securitylevel">{{item.securitylevel}}</li>
                         <li class="choice-operate">
                             <a :href="baseUrl+item.id" target="_blank"><i class="ic ic-info"></i></a>
                         </li>
@@ -47,12 +50,12 @@
     var vm = new Vue({
         el: '#attr-choice',
         data: {
-            'url': '../attribute/getAttrType',
+            'url': '../upstream/getAttr',
             "dataItem": [
 //                {"id": 1,"name": "位置信息", "prefix": "POSI"},
 //                {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
             ],
-            baseUrl: '../attrType/attrTypeInfo?id='
+            infoUrl: '../attribute/attributeInfo?id='
         },
         methods: {
             page_active: function (res, opt) {
