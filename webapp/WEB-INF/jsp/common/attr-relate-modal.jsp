@@ -77,7 +77,7 @@
                                     data: opt,
                                     dataType: "json",
                                     success: function (res) {
-                                        $('#keyWord').val(res.content.items[1].keyWord);
+                                        $('#keyword').val(res.content.items[1].keyWord);
                                         _self.dataItem = res.content.items[0].data;
                                     },
                                     error: function () {
