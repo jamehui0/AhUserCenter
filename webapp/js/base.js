@@ -54,6 +54,18 @@ $(function () {
         }
     })
 });
+/*检查识别码不为空*/
+function check_identity(){
+    var tar=$('.num-identity');
+    var val=tar.html();
+    var em=tar.parent().find('em');
+    if(val!=''){
+        em.html('<i class="ic ic-right">').show();
+    }else{
+        em.html('<i class="ic ic-warn"></i>识别码为必填项').show();
+    }
+}
+/*检查弹窗搜索关键词*/
 function check_keyWord(){
     var tar=$('#keyword');
     var val=tar.val();

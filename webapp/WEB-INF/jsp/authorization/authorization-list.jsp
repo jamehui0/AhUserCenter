@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../css/common/base.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
+    <style>
+        .item-name{width: 326px}
+        .item-securitylevel{width: 120px}
+        .item-identity{width: 446px}
+        .item-operate{width: 140px}
+    </style>
 </head>
 <body>
 <% include ../common/header.jsp %>
@@ -21,27 +27,27 @@
                 <ol class="breadcrumb">
                     <li class="active">授权管理</li>
                 </ol>
-                <a class="btn btn-add pull-right" href="../authorization/authorizationAdd"><i class="ic ic-plus"></i><span>新增授权</span></a>
+                <a class="btn btn-add pull-right" href="../authorization/authorizationEdit"><i class="ic ic-plus"></i><span>新增授权</span></a>
             </div>
             <!--搜索框-->
             <div class="search mb20">
                 <form action="" method="get" id="form-search">
-                    <input class="i786" type="text" name="" value="" placeholder="请输入内容ID或名称进行搜索">
+                    <input id="keyword" class="i894" type="text" name="" value="" placeholder="请输入名称进行搜索">
                     <a class="btn btn-search pull-right" href=""><i class="ic ic-search"></i><span>搜索</span></a>
                 </form>
             </div>
             <!--列表-->
             <div class="list mb20 shadow clearfix">
                 <ul class="list-head">
-                    <li class="item-position">ID</li>
                     <li class="item-name">名称</li>
-                    <li class="item-img">图片</li>
+                    <li class="item-securitylevel">安全级别</li>
+                    <li class="item-identity">识别码</li>
                     <li class="item-operate">操作</li>
                 </ul>
                 <ul class="list-item">
-                    <li class="item-position">E12345678912</li>
                     <li class="item-name">名称名称名称名称名称名称名称名称名称名称名称名称名称</li>
-                    <li class="item-img"><img src="../images/base/img-item.jpg" alt=""></li>
+                    <li class="item-securitylevel">安全级别</li>
+                    <li class="item-identity">识别码</li>
                     <li class="item-operate">
                         <a href="../authorization/authorizationEdit"><i class="ic ic-edit"></i></a>
                         <a href="../authorization/authorizationInfo"><i class="ic ic-info"></i></a>
