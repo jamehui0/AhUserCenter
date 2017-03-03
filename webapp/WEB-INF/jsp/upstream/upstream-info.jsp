@@ -18,7 +18,7 @@
             <div class="content-title">
                 <!--面包屑-->
                 <ol class="breadcrumb">
-                    <li>授权管理</li>
+                    <li>上游平台管理</li>
                     <li class="active">详情</li>
                 </ol>
             </div><!--content-title-->

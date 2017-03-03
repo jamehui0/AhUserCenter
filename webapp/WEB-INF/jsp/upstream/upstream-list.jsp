@@ -25,9 +25,9 @@
             <div class="content-title">
                 <!--面包屑-->
                 <ol class="breadcrumb">
-                    <li class="active">授权管理</li>
+                    <li class="active">上游平台管理</li>
                 </ol>
-                <a class="btn btn-add pull-right" href="../authorization/authorizationEdit"><i class="ic ic-plus"></i><span>新增授权</span></a>
+                <a class="btn btn-add pull-right" href="../upstream/upstreamEdit"><i class="ic ic-plus"></i><span>新增平台</span></a>
             </div>
             <!--搜索框-->
             <div class="search mb20">
@@ -49,8 +49,8 @@
                     <li class="item-securitylevel">安全级别</li>
                     <li class="item-identity">识别码</li>
                     <li class="item-operate">
-                        <a href="../authorization/authorizationEdit"><i class="ic ic-edit"></i></a>
-                        <a href="../authorization/authorizationInfo" target="_blank"><i class="ic ic-info"></i></a>
+                        <a href="../upstream/upstreamEdit"><i class="ic ic-edit"></i></a>
+                        <a href="../upstream/upstreamInfo" target="_blank"><i class="ic ic-info"></i></a>
                         <a href=""><i class="ic ic-delete"></i></a>
                     </li>
                     <li class="line"></li>

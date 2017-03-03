@@ -16,4 +16,6 @@ module.exports = function (app) {
     app.use('/security', require('./security'));
     /*授权管理*/
     app.use('/authorization', require('./authorization'));
+    /*上游平台管理*/
+    app.use('/upstream', require('./upstream'));
 };
