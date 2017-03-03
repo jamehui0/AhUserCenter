@@ -50,17 +50,17 @@
             <form action="" method="post">
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>名称</label>
-                    <input id="name" class="i280" type="text" name="" maxlength="20">
+                    <input id="name" class="i400" type="text" name="" maxlength="20">
                     <em></em>
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>字段名称</label>
-                    <input id="fieldname" class="i280" type="text" name="" maxlength="12">
+                    <input id="fieldname" class="i400" type="text" name="" maxlength="12">
                     <em></em>
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>字段类型</label>
-                    <select name="" class="i280" id="fieldtype">
+                    <select name="" class="i400" id="fieldtype">
                         <option value="1">String</option>
                         <option value="2">时间类型</option>
                     </select>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>安全级别</label>
-                    <select name="" class="i280" id="securitylevel">
+                    <select name="" class="i400" id="securitylevel">
                         <option value="1">一级</option>
                         <option value="2">二级</option>
                         <option value="3">三级</option>

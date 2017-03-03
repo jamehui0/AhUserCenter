@@ -26,12 +26,12 @@
             <form action="" method="post">
                 <div class="form-list">
                     <label class="l46"><i class="ic ic-dotred"></i>名称</label>
-                    <input id="name" class="i280" type="text" name="" maxlength="20">
+                    <input id="name" class="i400" type="text" name="" maxlength="20">
                     <em></em>
                 </div>
                 <div class="form-list">
                     <label class="l46"><i class="ic ic-dotred"></i>前缀</label>
-                    <input id="prefix" class="i280" type="text" name="" maxlength="10">
+                    <input id="prefix" class="i400" type="text" name="" maxlength="10">
                     <em></em>
                 </div>
                 <div class="form-list textarea">
