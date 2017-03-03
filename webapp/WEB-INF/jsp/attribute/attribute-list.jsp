@@ -64,7 +64,7 @@
                     <li class="item-securitylevel">安全级别</li>
                     <li class="item-operate">
                         <a href="../attribute/attributeEdit"><i class="ic ic-edit"></i></a>
-                        <a href="../attribute/attributeInfo"><i class="ic ic-info"></i></a>
+                        <a href="../attribute/attributeInfo" target="_blank"><i class="ic ic-info"></i></a>
                         <a href=""><i class="ic ic-delete"></i></a>
                     </li>
                     <li class="line"></li>

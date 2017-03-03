@@ -54,7 +54,7 @@
                     <li class="item-perfix">前缀</li>
                     <li class="item-operate">
                         <a href="../attrType/attrTypeEdit"><i class="ic ic-edit"></i></a>
-                        <a href="../attrType/attrTypeInfo"><i class="ic ic-info"></i></a>
+                        <a href="../attrType/attrTypeInfo" target="_blank"><i class="ic ic-info"></i></a>
                         <a href=""><i class="ic ic-delete"></i></a>
                     </li>
                     <li class="line"></li>
