@@ -37,18 +37,18 @@
             <form action="" method="post">
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>名称</label>
-                    <input id="name" class="i280" type="text" name="" maxlength="30">
-                    <em>不超过30个字符，可由中英文数字及中英文符号组成</em>
+                    <input id="name" class="i280" type="text" name="" maxlength="20">
+                    <em></em>
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>回调地址</label>
                     <input id="backup" class="i280" type="text" name="" maxlength="30">
-                    <em>不超过30个字符，可由中英文数字及中英文符号组成</em>
+                    <em></em>
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>文件目录</label>
                     <input id="directory" class="i280" type="text" name="" maxlength="30">
-                    <em>不超过30个字符，可由中英文数字及中英文符号组成</em>
+                    <em></em>
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>安全级别</label>
