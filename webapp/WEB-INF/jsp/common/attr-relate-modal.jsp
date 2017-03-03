@@ -9,7 +9,7 @@
             </div>
             <div class="modal-body">
                 <div class="choice-search mb20">
-                    <input id="keyWord" class="i786" type="text" name="keyWord" value="" placeholder="请输入名称或前缀进行搜索">
+                    <input id="keyword" class="i786" type="text" name="keyWord" value="" placeholder="请输入名称或前缀进行搜索">
                     <a class="btn pull-right" href="javascript:;" @click="showData"><i class="ic ic-search"></i><span>搜索</span></a>
                 </div>
                 <div class="list-choice mb20 clearfix">
@@ -96,7 +96,10 @@
                     pageNo: '1'
                 };
                 if (typeof ev != "undefined") {
-                    opt.keyWord = $('#keyWord').val();
+                    opt.keyWord = $('#keyword').val();
+                    if(!check_keyWord()){
+                        return;
+                    }
                 }
                 $.ajax({
                     url: _self.url,
@@ -110,7 +113,7 @@
                     error: function () {
                         alert('系统错误，请刷新后重试！')
                     }
-                })
+                });
             }
         }
     });
