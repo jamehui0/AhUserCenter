@@ -80,17 +80,12 @@
                     <a class="btn btn-choice" data-toggle="modal" data-target="#attr-choice"><span>选择</span></a>
                     <div class="list-relate" style="margin-left: 88px">
                         <ul class="relate-item">
-                            <input type="hidden" name="" value="">
-                            <li class="relate-name">位置信息1</li>
+                            <input type="hidden" name="" value="0">
+                            <li class="relate-name">原先</li>
                             <li class="relate-fieldname">asdagadfasd</li>
                             <li class="relate-fieldtype">字符串</li>
                             <li class="relate-securitylevel">一级</li>
-                            <li class="relate-operate">
-                                <a href="javascript:;" title="移除">
-                                    <i class="ic ic-remove" url="../exhibit/delRelateCache" baseInfoId="${picInfo.id}"></i>
-                                </a>
-                                <a href="" target="_blank"><i class="ic ic-info"></i></a>
-                            </li>
+                            <li class="relate-operate"><a href="javascript:;" title="移除"><i class="ic ic-remove" data-del=""></i></a><a href="" target="_blank"><i class="ic ic-info"></i></a></li>
                         </ul>
                     </div>
                 </div>

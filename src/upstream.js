@@ -41,4 +41,10 @@ router.get('/getAttr', function (req, res, next) {
     });
 });
 
+router.post('/telArr', function (req, res, next) {
+    var a=req.body.id_related;
+    console.log(a);
+    res.send('发送成功');
+});
+
 module.exports = router;

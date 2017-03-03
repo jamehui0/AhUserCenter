@@ -59,8 +59,7 @@
 //                {"id": 1,"name": "位置信息", "prefix": "POSI"},
 //                {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
             ],
-            infoUrl: '../attribute/attributeInfo?id=',
-            delUrl: '../attribute/attributeInfo?id='
+            infoUrl: '../attribute/attributeInfo?id='
         },
         methods: {
             page_active: function (res, opt) {
@@ -138,7 +137,7 @@
                 var arr_fieldname = [];//字段名数组
                 var arr_fieldtype = [];//字段类型数组
                 var arr_securitylevel = [];//安全级别数组
-                var str_add='';//新添加节点html
+                var str_add = '';//新添加节点html
                 checked.each(function () {
                     var choice_id = $(this).val();
                     var choice_name = $(this).data('name');
@@ -152,10 +151,38 @@
                     arr_securitylevel.push(choice_securitylevel);
                 });
                 /*1.先告知服务器选中了哪些*/
+                var old_checked=$('.relate-item input');
+                var old_id_arr=[];
+                old_checked.each(function(){
+                    old_id_arr.push($(this).val());
+                });
+                var total_id_arr=old_id_arr.concat(arr_id);
+                var data_total_id_arr=JSON.stringify(total_id_arr);
+                $.ajax({
+                    url: '../upstream/telArr',
+                    type: 'post',
+                    data: {'id_related':data_total_id_arr},
+                    dataType: "json",
+                    success: function (res) {
 
+                    },
+                    error: function () {
+                        alert('系统错误，请刷新后重试！')
+                    }
+                });
                 /*2.进行节点操作添加节点到关联列表*/
-
-
+                for (var i = 0; i < len_choice; i++) {
+                    str_add += '<ul class="relate-item">';
+                    str_add += '<input type="hidden" name="" value="' + arr_id[i] + '">';
+                    str_add += '<li class="relate-name">' + arr_name[i] + '</li>';
+                    str_add += '<li class="relate-fieldname">' + arr_fieldname[i] + '</li>';
+                    str_add += '<li class="relate-fieldtype">' + arr_fieldtype[i] + '</li>';
+                    str_add += '<li class="relate-securitylevel">' + arr_securitylevel[i] + '</li>';
+                    str_add += '<li class="relate-operate"><a href="javascript:;" title="移除"><i class="ic ic-remove" data-del="' + arr_id[i] + '"></i></a><a href="' + arr_id[i] + '" target="_blank"><i class="ic ic-info"></i></a></li>';
+                    str_add += '</ul>';
+                }
+                $('.list-relate').html(html_old+str_add);
+                $('#attr-choice').modal('hide')
             }
         });
     });
