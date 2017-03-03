@@ -60,7 +60,7 @@
                 var _self = this;
                 var totalPages = res.content.items[0].totalPages;//总页数
                 var currentPageNo = res.content.items[0].currentPageNo;//当前页数
-                if (totalPages > 1) {
+                if (totalPages > 0) {
                     laypage({
                         cont: 'page-attrType-choice', //容器。值支持id名、原生dom对象，jquery对象,
                         pages: totalPages, //总页数
