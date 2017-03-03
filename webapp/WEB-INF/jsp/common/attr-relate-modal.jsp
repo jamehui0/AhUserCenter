@@ -43,7 +43,7 @@
     /**属性类型弹出前获取数据*/
     $('#attrType-choice').on('show.bs.modal', function (event) {
         vm.showData();
-        $('#keyWord').val('');
+        $('#keyword').val('');
     });
     var vm = new Vue({
         el: '#attrType-choice',

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/common/base.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
+    <script src="../js/ext/vue.min.js"></script>
     <script src="../js/base.js"></script>
     <style>
         .num-identity{
@@ -19,9 +20,10 @@
             background-color: #fff;
             text-align: center;
         }
+
     </style>
 </head>
-<body>
+<body id="">
 <% include ../common/header.jsp %>
 <div class="main">
     <% include ../common/menu.jsp %>
@@ -71,6 +73,22 @@
                     <label class="l80 pl16">说明</label>
                     <textarea id="desc" class="t594" name="" maxlength="500"></textarea>
                     <em></em>
+                </div>
+                <div class="form-list" style="width: 880px">
+                    <label class="l80 pl16">关联</label>
+                    <a class="btn btn-choice" data-toggle="modal" data-target="#attr-choice"><span>选择</span></a>
+                    <div class="list-relate" style="margin-left: 88px">
+                        <ul class="relate-item">
+                            <input type="hidden" name="ralateIdArray" value="">
+                            <li class="relate-name"></li>
+                            <li class="relate-operate">
+                                <a href="javascript:;" title="移除">
+                                    <i class="ic ic-remove" url="../exhibit/delRelateCache" baseInfoId="${picInfo.id}"></i>
+                                </a>
+                                <a href="" target="_blank"><i class="ic ic-info"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div style="margin-left: 88px">
                     <input class="btn btn-submit" type="submit" value="提交">
