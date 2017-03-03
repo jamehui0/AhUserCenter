@@ -594,11 +594,14 @@ label {
     width: 124px;
 }
 .relate-name {
-    width: 388px;
+    width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.relate-fieldname{width:298px}
+.relate-fieldtype{width:120px}
+.relate-securitylevel{width:120px}
 .relate-img {
     width: 134px;
 }

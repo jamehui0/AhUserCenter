@@ -9,7 +9,6 @@
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
     <script src="../js/ext/laypage/laypage.js"></script>
-    <script src="../js/ext/vue.min.js"></script>
     <script src="../js/base.js"></script>
     <style>
         .num-identity{
@@ -21,10 +20,9 @@
             background-color: #fff;
             text-align: center;
         }
-
     </style>
 </head>
-<body id="">
+<body>
 <% include ../common/header.jsp %>
 <div class="main">
     <% include ../common/menu.jsp %>
@@ -45,7 +43,12 @@
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>回调地址</label>
-                    <input id="backup" class="i400" type="text" name="" maxlength="30">
+                    <input id="url-req" class="i400" type="text" name="" maxlength="30">
+                    <em></em>
+                </div>
+                <div class="form-list">
+                    <label class="l80"><i class="ic ic-dotred"></i>回调地址</label>
+                    <input id="url-backup" class="i400" type="text" name="" maxlength="30">
                     <em></em>
                 </div>
                 <div class="form-list">
@@ -54,13 +57,10 @@
                     <em></em>
                 </div>
                 <div class="form-list">
-                    <label class="l80"><i class="ic ic-dotred"></i>安全级别</label>
-                    <select name="" class="i400" id="securitylevel">
-                        <option value="1">一级</option>
-                        <option value="2">二级</option>
-                        <option value="3">三级</option>
-                        <option value="4">四级</option>
-                        <option value="5">五级</option>
+                    <label class="l80"><i class="ic ic-dotred"></i>同步方式</label>
+                    <select name="" class="i400" id="update-type">
+                        <option value="1">全量</option>
+                        <option value="2">增量</option>
                     </select>
                     <em></em>
                 </div>
@@ -76,12 +76,15 @@
                     <em></em>
                 </div>
                 <div class="form-list" style="width: 880px">
-                    <label class="l80 pl16">关联</label>
+                    <label class="l80 pl16">属性选择</label>
                     <a class="btn btn-choice" data-toggle="modal" data-target="#attr-choice"><span>选择</span></a>
                     <div class="list-relate" style="margin-left: 88px">
                         <ul class="relate-item">
-                            <input type="hidden" name="ralateIdArray" value="">
-                            <li class="relate-name"></li>
+                            <input type="hidden" name="" value="">
+                            <li class="relate-name">位置信息1</li>
+                            <li class="relate-fieldname">asdagadfasd</li>
+                            <li class="relate-fieldtype">字符串</li>
+                            <li class="relate-securitylevel">一级</li>
                             <li class="relate-operate">
                                 <a href="javascript:;" title="移除">
                                     <i class="ic ic-remove" url="../exhibit/delRelateCache" baseInfoId="${picInfo.id}"></i>

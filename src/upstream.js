@@ -27,7 +27,7 @@ router.get('/getAttr', function (req, res, next) {
                 {
                     "data": [
                         {"id": 1,"name": name, "fieldname":fieldname,"fieldtype":"字符串","securitylevel":"一级"},
-                        {"id": 2,"name": "通信及社交信息","fieldname":"asdagadfasd","fieldtype":"时间","securitylevel":"二级"}
+                        {"id": 2,"name": "属性名","fieldname":"字段名","fieldtype":"时间","securitylevel":"二级"}
                     ],
                     "currentPageNo": currentPageNo,
                     "pageSize": 2,

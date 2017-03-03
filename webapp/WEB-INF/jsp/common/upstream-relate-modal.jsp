@@ -1,3 +1,4 @@
+<script src="../js/ext/vue.min.js"></script>
 <link rel="stylesheet" href="../css/common/modal.css">
 <!--选择属性类型弹窗-->
 <div class="modal fade" id="attr-choice" tabindex="-1" role="dialog">

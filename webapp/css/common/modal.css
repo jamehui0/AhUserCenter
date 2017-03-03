@@ -66,3 +66,11 @@
 #attrType-choice .choice-name{width: 410px}
 #attrType-choice .choice-prefix{width: 300px}
 #attrType-choice .choice-operate{width: 180px}
+
+/*选择属性弹窗*/
+#attr-choice .choice-check{width: 40px}
+#attr-choice .choice-name{width: 220px}
+#attr-choice .choice-fieldname{width: 290px}
+#attr-choice .choice-fieldtype{width: 120px}
+#attr-choice .choice-securitylevel{width: 120px}
+#attr-choice .choice-operate{width: 140px}
