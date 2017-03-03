@@ -56,8 +56,6 @@
         data: {
             'url': '../upstream/getAttr',
             "dataItem": [
-//                {"id": 1,"name": "位置信息", "prefix": "POSI"},
-//                {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
             ],
             infoUrl: '../attribute/attributeInfo?id='
         },
