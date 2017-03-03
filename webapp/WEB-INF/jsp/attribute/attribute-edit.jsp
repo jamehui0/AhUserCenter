@@ -101,7 +101,6 @@
         </div><!--wrapper-->
     </div><!--main-content-->
 </div>
-<% include ../common/attr-relate-modal.jsp %>
 <script>
     $(function () {
         $('#name').blur(function(){
@@ -124,5 +123,6 @@
         }
     })
 </script>
+<% include ../common/attr-relate-modal.jsp %>
 </body>
 </html>
