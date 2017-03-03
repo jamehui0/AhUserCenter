@@ -12,7 +12,6 @@
 <body>
 <% include ../common/header.jsp %>
 <div class="main">
-    <% include ../common/menu.jsp %>
     <div class="main-content">
         <div class="wrapper">
             <div class="content-title">
