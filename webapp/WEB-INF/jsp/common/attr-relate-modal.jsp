@@ -5,7 +5,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-               属性类型
+                属性类型
             </div>
             <div class="modal-body">
                 <div class="choice-search mb20">
@@ -19,8 +19,9 @@
                         <li class="choice-prefix">前缀</li>
                         <li class="choice-operate">操作</li>
                     </ul>
-                    <ul class="choice-item"  v-for="item in dataItem">
-                        <li class="choice-check"><input type="radio" :value="item.id"></li>
+                    <ul class="choice-item" v-for="item in dataItem">
+                        <li class="choice-check"><input type="radio" :value="item.id" :data-name="item.name" :data-prefix="item.prefix"
+                                                        :data-info="baseUrl+item.id"></li>
                         <li class="choice-name">{{item.name}}</li>
                         <li class="choice-prefix">{{item.prefix}}</li>
                         <li class="choice-operate">
@@ -29,11 +30,11 @@
                     </ul>
                 </div>
                 <!-- 分页码 -->
-                <div id="page-attrType-choice"  style="text-align:center;width: 932px"></div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <div id="page-attrType-choice" style="text-align:center;width: 932px"></div>
+                <div style="text-align: center;margin-top: 20px">
+                    <input class="btn btn-ok" type="button" value="确定">
+                    <a class="btn btn-close" style="margin-left: 40px" data-dismiss="modal"><span>取消</span></a>
+                </div>
             </div>
         </div>
     </div>
@@ -52,7 +53,7 @@
 //                {"id": 1,"name": "位置信息", "prefix": "POSI"},
 //                {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
             ],
-            baseUrl:'../attrType/attrTypeInfo?id='
+            baseUrl: '../attrType/attrTypeInfo?id='
         },
         methods: {
             page_active: function (res, opt) {
@@ -76,7 +77,7 @@
                                     data: opt,
                                     dataType: "json",
                                     success: function (res) {
-                                        $('#keyWord').val(res.content.items[0].keyWord);
+                                        $('#keyWord').val(res.content.items[1].keyWord);
                                         _self.dataItem = res.content.items[0].data;
                                     },
                                     error: function () {
@@ -94,8 +95,8 @@
                     pageSize: '2',//每页条数
                     pageNo: '1'
                 };
-                if(typeof ev != "undefined"){
-                    opt.keyWord=$('#keyWord').val();
+                if (typeof ev != "undefined") {
+                    opt.keyWord = $('#keyWord').val();
                 }
                 $.ajax({
                     url: _self.url,
@@ -112,5 +113,25 @@
                 })
             }
         }
+    });
+    $(function () {
+        $('.btn-ok').click(function () {
+            var choice = $('.choice-check :checked');
+            var len_choice = choice.length;
+            if (len_choice == 0) {
+                alert('请先选择属性类型');
+            } else {
+                var id = choice.val();
+                var name = choice.attr('data-name');
+                var prefix = choice.attr('data-prefix');
+                var info = choice.attr('data-info');
+                var str_html = '<input class="related-id" name="relatedId" type="hidden" value="' + id + '">' +
+                        '<li class="related-name">' + name + '</li>' +
+                        '<li class="related-prefix">' + prefix + '</li>' +
+                        '<li class="related-info"><a href="' + info + '" target="_blank"><i class="ic ic-info"></i></a></li>';
+                $('.related-attrType').html(str_html).show();
+                $('#attrType-choice').modal('hide')
+            }
+        });
     });
 </script>

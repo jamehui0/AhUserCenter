@@ -29,10 +29,12 @@ router.get('/getAttrType', function (req, res, next) {
                         {"id": 1,"name": name, "prefix": prefix},
                         {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
                     ],
-                    "keyWord": keyWord,
                     "currentPageNo": currentPageNo,
                     "pageSize": 2,
                     "totalPages": 14
+                },
+                {
+                    "keyWord": keyWord
                 }
             ]
         }

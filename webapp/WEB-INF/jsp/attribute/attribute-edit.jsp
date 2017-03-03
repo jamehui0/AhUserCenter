@@ -10,6 +10,29 @@
     <script src="../js/ext/bootstrap.min.js"></script>
     <script src="../js/ext/laypage/laypage.js"></script>
     <script src="../js/base.js"></script>
+    <style>
+        .related-attrType{
+            height: 36px;
+            line-height: 28px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+        .related-attrType li{
+            padding: 0 6px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .related-attrType li,.related-attrType i{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .related-name{width: 194px;}
+        .related-prefix{width: 180px;}
+        .related-info{width: 80px;}
+    </style>
 </head>
 <body>
 <% include ../common/header.jsp %>
@@ -56,7 +79,13 @@
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>属性类型</label>
-                    <a class="btn btn-choice" url="../recommend?reset" data-toggle="modal" data-target="#attrType-choice"><span>选择</span></a>
+                    <a class="btn btn-choice" data-toggle="modal" data-target="#attrType-choice"><span>选择</span></a>
+                    <ul class="related-attrType" style="display: none">
+                        <input class="related-id" name="relatedId" type="hidden" value="">
+                        <li class="related-name">通信及社交信息</li>
+                        <li class="related-prefix">asdasd</li>
+                        <li class="related-info"> <a href="" target="_blank"><i class="ic ic-info"></i></a></li>
+                    </ul>
                     <em></em>
                 </div>
                 <div class="form-list textarea">
@@ -72,7 +101,7 @@
         </div><!--wrapper-->
     </div><!--main-content-->
 </div>
-<% include ../common/modal.jsp %>
+<% include ../common/attr-relate-modal.jsp %>
 <script>
     $(function () {
         $('#name').blur(function(){
