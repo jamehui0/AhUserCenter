@@ -14,6 +14,10 @@ router.get('/upstreamInfo', function (req, res, next) {
 });
 
 router.get('/getAttr', function (req, res, next) {
+
+    var a=req.query.id_related;
+    console.log(a);
+
     var currentPageNo=req.query.pageNo;
     var keyWord=req.query.keyWord;
     var name="位置信息"+currentPageNo;
@@ -39,12 +43,6 @@ router.get('/getAttr', function (req, res, next) {
             ]
         }
     });
-});
-
-router.post('/telArr', function (req, res, next) {
-    var a=req.body.id_related;
-    console.log(a);
-    res.send('发送成功');
 });
 
 module.exports = router;

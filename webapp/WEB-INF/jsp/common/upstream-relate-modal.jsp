@@ -107,6 +107,13 @@
                         return;
                     }
                 }
+                /*告知服务器列表中已经选中了哪些*/
+                var old_checked=$('.relate-item input');
+                var old_id_arr=[];
+                old_checked.each(function(){
+                    old_id_arr.push($(this).val());
+                });
+                opt.id_related=JSON.stringify(old_id_arr);
                 $.ajax({
                     url: _self.url,
                     type: 'get',
@@ -150,27 +157,8 @@
                     arr_fieldtype.push(choice_fieldtype);
                     arr_securitylevel.push(choice_securitylevel);
                 });
-                /*1.先告知服务器选中了哪些*/
-                var old_checked=$('.relate-item input');
-                var old_id_arr=[];
-                old_checked.each(function(){
-                    old_id_arr.push($(this).val());
-                });
-                var total_id_arr=old_id_arr.concat(arr_id);
-                var data_total_id_arr=JSON.stringify(total_id_arr);
-                $.ajax({
-                    url: '../upstream/telArr',
-                    type: 'post',
-                    data: {'id_related':data_total_id_arr},
-                    dataType: "json",
-                    success: function (res) {
 
-                    },
-                    error: function () {
-                        alert('系统错误，请刷新后重试！')
-                    }
-                });
-                /*2.进行节点操作添加节点到关联列表*/
+                /*进行节点操作添加节点到关联列表*/
                 for (var i = 0; i < len_choice; i++) {
                     str_add += '<ul class="relate-item">';
                     str_add += '<input type="hidden" name="" value="' + arr_id[i] + '">';
