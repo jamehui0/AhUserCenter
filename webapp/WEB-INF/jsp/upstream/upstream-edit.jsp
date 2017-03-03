@@ -107,5 +107,6 @@
 
     });
 </script>
+<% include ../common/upstream-relate-modal.jsp %>
 </body>
 </html>
