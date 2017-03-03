@@ -22,7 +22,10 @@
                         <li class="choice-operate">操作</li>
                     </ul>
                     <ul class="choice-item" v-for="item in dataItem">
-                        <li class="choice-check"><input type="checkbox" :value="item.id" :data-name="item.name" :data-prefix="item.prefix" :data-info="baseUrl+item.id"></li>
+                        <li class="choice-check">
+                            <input type="checkbox" :value="item.id" :data-name="item.name" :data-fieldname="item.fieldname"
+                                   :data-fieldtype="item.fieldtype" :data-securitylevel="item.securitylevel">
+                        </li>
                         <li class="choice-name">{{item.name}}</li>
                         <li class="choice-fieldname">{{item.fieldname}}</li>
                         <li class="choice-fieldtype">{{item.fieldtype}}</li>
@@ -56,7 +59,8 @@
 //                {"id": 1,"name": "位置信息", "prefix": "POSI"},
 //                {"id": 2,"name": "通信及社交信息", "prefix": "CONT"}
             ],
-            infoUrl: '../attribute/attributeInfo?id='
+            infoUrl: '../attribute/attributeInfo?id=',
+            delUrl: '../attribute/attributeInfo?id='
         },
         methods: {
             page_active: function (res, opt) {
@@ -100,7 +104,7 @@
                 };
                 if (typeof ev != "undefined") {
                     opt.keyWord = $('#keyword').val();
-                    if(!check_keyWord()){
+                    if (!check_keyWord()) {
                         return;
                     }
                 }
@@ -119,5 +123,40 @@
                 });
             }
         }
+    });
+    $(function () {
+        $('.btn-ok').click(function () {
+            var html_old = $('.list-relate').html();//点击时关联列表的节点html
+
+            var checked = $('.choice-check :checked');
+            var len_choice = checked.length;
+            if (len_choice == 0) {
+                alert('请先选择属性');
+            } else {
+                var arr_id = [];//id数组
+                var arr_name = [];//名称数组
+                var arr_fieldname = [];//字段名数组
+                var arr_fieldtype = [];//字段类型数组
+                var arr_securitylevel = [];//安全级别数组
+                var str_add='';//新添加节点html
+                checked.each(function () {
+                    var choice_id = $(this).val();
+                    var choice_name = $(this).data('name');
+                    var choice_fieldname = $(this).data('fieldname');
+                    var choice_fieldtype = $(this).data('fieldtype');
+                    var choice_securitylevel = $(this).data('securitylevel');
+                    arr_id.push(choice_id);
+                    arr_name.push(choice_name);
+                    arr_fieldname.push(choice_fieldname);
+                    arr_fieldtype.push(choice_fieldtype);
+                    arr_securitylevel.push(choice_securitylevel);
+                });
+                /*1.先告知服务器选中了哪些*/
+
+                /*2.进行节点操作添加节点到关联列表*/
+
+
+            }
+        });
     });
 </script>
