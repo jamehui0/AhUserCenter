@@ -53,7 +53,7 @@
                 </div>
                 <div class="form-list">
                     <label class="l80"><i class="ic ic-dotred"></i>文件目录</label>
-                    <input id="directory" class="i400" type="text" name="" maxlength="30">
+                    <input id="dir" class="i400" type="text" name="" maxlength="30">
                     <em></em>
                 </div>
                 <div class="form-list">
