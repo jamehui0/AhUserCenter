@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="../css/common/base.css">
     <script src="../js/ext/jquery-1.11.3.js"></script>
     <script src="../js/ext/bootstrap.min.js"></script>
+    <style>
+        .related-attrType{
+            height: 36px;
+            line-height: 28px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+        .related-attrType li{
+            padding: 0 6px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .related-attrType li,.related-attrType i{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .related-name{width: 194px;}
+        .related-prefix{width: 180px;}
+    </style>
 </head>
 <body>
 <% include ../common/header.jsp %>
@@ -21,14 +43,36 @@
                     <li class="active">详情</li>
                 </ol>
             </div><!--content-title-->
-            <div class="form-list">
+            <div class="info-list">
                 <label class="l80">名称</label>
+                <span>名称名称名称名称名称名称名称名称</span>
             </div>
-            <div class="form-list">
-                <label class="l80">前缀</label>
+            <div class="info-list">
+                <label class="l80">字段名称</label>
+                <span>字段名称字段名称字段名称字段名称</span>
             </div>
-            <div class="form-list textarea">
-                <label class="l80 pl16">备注</label>
+            <div class="info-list">
+                <label class="l80">字段类型</label>
+                <span>时间</span>
+            </div>
+            <div class="info-list">
+                <label class="l80">安全级别</label>
+                <span>一级</span>
+            </div>
+            <div class="info-list">
+                <label class="l80">属性类型</label>
+                <ul class="related-attrType">
+                    <li class="related-name">通信及社交信息</li>
+                    <li class="related-prefix">asdasd</li>
+                </ul>
+            </div>
+            <div class="info-list">
+                <label class="l80">说明</label>
+                <p>说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明</p>
+            </div>
+            <div class="info-list">
+                <label class="l80">修改时间</label>
+                <span>2017-02-15</span>
             </div>
         </div><!--wrapper-->
     </div><!--main-content-->

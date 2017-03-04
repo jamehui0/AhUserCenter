@@ -21,14 +21,21 @@
                     <li class="active">详情</li>
                 </ol>
             </div><!--content-title-->
-            <div class="form-list">
+            <div class="info-list">
                 <label class="l80">名称</label>
+                <span>名称名称名称名称名称名称名称名称</span>
             </div>
-            <div class="form-list">
+            <div class="info-list">
                 <label class="l80">前缀</label>
+                <span>前缀前缀前缀前缀</span>
             </div>
-            <div class="form-list textarea">
-                <label class="l80 pl16">备注</label>
+            <div class="info-list">
+                <label class="l80">说明</label>
+                <p>说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明</p>
+            </div>
+            <div class="info-list">
+                <label class="l80">修改时间</label>
+                <span>2017-02-15</span>
             </div>
         </div><!--wrapper-->
     </div><!--main-content-->

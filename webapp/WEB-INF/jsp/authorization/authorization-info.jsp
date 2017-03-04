@@ -21,14 +21,33 @@
                     <li class="active">详情</li>
                 </ol>
             </div><!--content-title-->
-            <div class="form-list">
+            <div class="info-list">
                 <label class="l80">名称</label>
+                <span>名称名称名称名称名称名称名称名称</span>
             </div>
-            <div class="form-list">
-                <label class="l80">前缀</label>
+            <div class="info-list">
+                <label class="l80">回调地址</label>
+                <span>回调地址回调地址回调地址</span>
             </div>
-            <div class="form-list textarea">
-                <label class="l80 pl16">备注</label>
+            <div class="info-list">
+                <label class="l80">文件目录</label>
+                <span>文件目录文件目录文件目录文件目录</span>
+            </div>
+            <div class="info-list">
+                <label class="l80">安全级别</label>
+                <span>一级</span>
+            </div>
+            <div class="info-list">
+                <label class="l80">识别码</label>
+                <span>识别码识别码识别码识别码</span>
+            </div>
+            <div class="info-list">
+                <label class="l80">说明</label>
+                <p>说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明</p>
+            </div>
+            <div class="info-list">
+                <label class="l80">修改时间</label>
+                <span>2017-02-15</span>
             </div>
         </div><!--wrapper-->
     </div><!--main-content-->
