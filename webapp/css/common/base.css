@@ -293,6 +293,12 @@ label {
     width: 0;
     height: 0;
 }
+.form-list input[disabled],.form-list select[disabled]{
+    background-color: #eee;
+    opacity: 1;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
 /*搜索框开始*/
 .search {
     width: 1032px;
